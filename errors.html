@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Errors</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+</style>
+
+<body>
+
+    <script>
+        const a = 1;
+        const b = 2;
+
+        // console.log(c);
+
+        //  A ReferenceError is thrown when one refers
+        // to a variable that is not declared and/or initialized within the current scope.
+
+        function add() {
+            return c;
+        }
+
+        function print() {
+            add();
+        }
+
+        print();
+
+        //Common Types of Errors
+
+        function helloWorld() {
+            console.log "Hello World!"
+        }
+
+        // Uncaught SyntaxError: unexpected token: 
+        // will throw the following error, because we forgot the parentheses for console.log()!
+
+        // Type Error
+
+        //an operand or argument passed to a function
+        //is incompatible with the type expected by that operator or function;
+
+        //or when attempting to modify a value that cannot be changed;
+        //or when attempting to use a value in an inappropriate way.
+
+        const str1 = "Hello";
+        const str2 = "World!";
+        const message = str1.push(str2);
+
+        // .push() is not a String method, it’s an Array method.
+
+
+
+    </script>
+
+</body>
+
+</html>
